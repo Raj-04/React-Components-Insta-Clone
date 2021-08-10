@@ -19,6 +19,7 @@ const Post = props => {
           alt='post thumbnail'
           className='post-image'
           src={post.imageUrl}
+          onDoubleClick={() => likePost(post.id)}
         />
       </div>
       {/* Is LikeSection getting all the props it needs to work correctly? */}
